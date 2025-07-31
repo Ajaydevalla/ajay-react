@@ -1,8 +1,8 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import "./home.css"
-import {SiPython,SiJavascript,SiC,SiHtml5,} from "react-icons/si"
-import { FaJava, FaUser } from "react-icons/fa6"; // Added FaUser for profile icon
+import {SiPython,SiJavascript,SiC,SiHtml5,SiCplusplus} from "react-icons/si" // Added SiCplusplus
+import { FaJava, FaUser, FaHome, FaGraduationCap } from "react-icons/fa6"; // Added more icons
 import { MdCss } from "react-icons/md";
 import { PiFileSql } from "react-icons/pi";
 
@@ -35,9 +35,9 @@ function Home(){
                     <option value="">sql</option>
                 </select>
                 <input id='navinput' placeholder='Search programs & examples' type="text" />
-                <button>home</button>
-                <button>learn Courses</button>
-                <button><FaUser /> profile</button> {/* Added profile icon */}
+                <button><FaHome /> home</button> {/* Added home icon */}
+                <button><FaGraduationCap /> learn Courses</button> {/* Added graduation cap icon */}
+                <button><FaUser /> profile</button>
             </nav>
            <h1>learn programs for free</h1>
            <div id='div12'>
@@ -45,7 +45,7 @@ function Home(){
            <button onClick={()=>{nav("/python")}}> <SiPython/> Python</button>
            <button onClick={()=>{nav("/javascript")}}><SiJavascript/>Javascript</button>
            <button onClick={()=>{nav("/c")}}><SiC/>C</button>
-           <button onClick={()=>{nav("/c++")}}>C++</button>
+           <button onClick={()=>{nav("/c++")}}><SiCplusplus/>C++</button> {/* Better C++ icon */}
            <button onClick={()=>{nav("/html")}}><SiHtml5/>HTML</button>
            </div>
                        
