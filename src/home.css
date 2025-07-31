@@ -78,32 +78,65 @@ nav select option {
     color: #999;
 }
 
-/* Navigation buttons */
+/* Navigation buttons with icons */
 nav button {
     padding: 0.5rem 1rem;
-    border: 1px solid #2196f3;
-    background: white;
-    color: #2196f3;
+    border: none;
+    background: transparent;
+    color: #666;
     border-radius: 4px;
     font-size: 0.9rem;
     font-weight: 500;
     cursor: pointer;
     transition: all 0.3s ease;
     text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 nav button:hover {
-    background: #2196f3;
-    color: white;
+    background: #f0f7ff;
+    color: #2196f3;
 }
 
+/* Home button - minimal style */
 nav button:first-of-type {
-    background: #2196f3;
-    color: white;
+    color: #2196f3;
+    font-weight: 600;
 }
 
 nav button:first-of-type:hover {
-    background: #1976d2;
+    background: #f0f7ff;
+    color: #1976d2;
+}
+
+/* Learn Courses button - subtle accent */
+nav button:nth-of-type(2) {
+    color: #666;
+}
+
+nav button:nth-of-type(2):hover {
+    background: #f0f7ff;
+    color: #2196f3;
+}
+
+/* Profile button - clean with icon */
+nav button:last-of-type {
+    color: #666;
+    border: 1px solid #e1e5e9;
+    border-radius: 20px;
+    padding: 0.4rem 0.8rem;
+}
+
+nav button:last-of-type:hover {
+    background: #2196f3;
+    color: white;
+    border-color: #2196f3;
+}
+
+nav button:last-of-type svg {
+    font-size: 0.9rem;
 }
 
 /* Main heading */
@@ -142,106 +175,124 @@ h1::first-letter {
 #div1 button, #div2 button {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
-    padding: 1rem 1.5rem;
+    gap: 0.75rem;
+    padding: 1.25rem 2rem;
     background: white;
-    border: 2px solid #e1e5e9;
-    border-radius: 8px;
-    font-size: 1rem;
+    border: 1px solid #e1e5e9;
+    border-radius: 12px;
+    font-size: 1.1rem;
     font-weight: 600;
     color: #333;
     cursor: pointer;
-    transition: all 0.3s ease;
-    min-width: 140px;
-    justify-content: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    min-width: 160px;
+    justify-content: flex-start;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
 }
 
 #div1 button:hover, #div2 button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    border-color: #2196f3;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    border-color: transparent;
 }
 
-/* Specific language button colors and icons */
+/* Language-specific styling with subtle color accents */
 #div1 button:nth-child(1) {
     /* Python */
-    border-color: #3776ab;
+    background: linear-gradient(135deg, #fff 0%, #f8fbff 100%);
+    border-left: 4px solid #3776ab;
 }
 
 #div1 button:nth-child(1):hover {
-    background: #3776ab;
+    background: linear-gradient(135deg, #3776ab 0%, #4a84c7 100%);
     color: white;
+    box-shadow: 0 8px 25px rgba(55, 118, 171, 0.3);
 }
 
 #div1 button:nth-child(2) {
     /* JavaScript */
-    border-color: #f7df1e;
+    background: linear-gradient(135deg, #fff 0%, #fffdf8 100%);
+    border-left: 4px solid #f7df1e;
 }
 
 #div1 button:nth-child(2):hover {
-    background: #f7df1e;
+    background: linear-gradient(135deg, #f7df1e 0%, #fae84a 100%);
     color: #333;
+    box-shadow: 0 8px 25px rgba(247, 223, 30, 0.3);
 }
 
 #div1 button:nth-child(3) {
     /* C */
-    border-color: #00599c;
+    background: linear-gradient(135deg, #fff 0%, #f8fbff 100%);
+    border-left: 4px solid #00599c;
 }
 
 #div1 button:nth-child(3):hover {
-    background: #00599c;
+    background: linear-gradient(135deg, #00599c 0%, #0066b3 100%);
     color: white;
+    box-shadow: 0 8px 25px rgba(0, 89, 156, 0.3);
 }
 
 #div1 button:nth-child(4) {
     /* C++ */
-    border-color: #00599c;
+    background: linear-gradient(135deg, #fff 0%, #f8fbff 100%);
+    border-left: 4px solid #00599c;
 }
 
 #div1 button:nth-child(4):hover {
-    background: #00599c;
+    background: linear-gradient(135deg, #00599c 0%, #0066b3 100%);
     color: white;
+    box-shadow: 0 8px 25px rgba(0, 89, 156, 0.3);
 }
 
 #div1 button:nth-child(5) {
     /* HTML */
-    border-color: #e34f26;
+    background: linear-gradient(135deg, #fff 0%, #fffaf9 100%);
+    border-left: 4px solid #e34f26;
 }
 
 #div1 button:nth-child(5):hover {
-    background: #e34f26;
+    background: linear-gradient(135deg, #e34f26 0%, #f56040 100%);
     color: white;
+    box-shadow: 0 8px 25px rgba(227, 79, 38, 0.3);
 }
 
 #div2 button:nth-child(1) {
     /* CSS */
-    border-color: #1572b6;
+    background: linear-gradient(135deg, #fff 0%, #f8fbff 100%);
+    border-left: 4px solid #1572b6;
 }
 
 #div2 button:nth-child(1):hover {
-    background: #1572b6;
+    background: linear-gradient(135deg, #1572b6 0%, #2584d1 100%);
     color: white;
+    box-shadow: 0 8px 25px rgba(21, 114, 182, 0.3);
 }
 
 #div2 button:nth-child(2) {
     /* SQL */
-    border-color: #336791;
+    background: linear-gradient(135deg, #fff 0%, #f8fbff 100%);
+    border-left: 4px solid #336791;
 }
 
 #div2 button:nth-child(2):hover {
-    background: #336791;
+    background: linear-gradient(135deg, #336791 0%, #4278a8 100%);
     color: white;
+    box-shadow: 0 8px 25px rgba(51, 103, 145, 0.3);
 }
 
 #div2 button:nth-child(3) {
     /* Java */
-    border-color: #ed8b00;
+    background: linear-gradient(135deg, #fff 0%, #fffcf8 100%);
+    border-left: 4px solid #ed8b00;
 }
 
 #div2 button:nth-child(3):hover {
-    background: #ed8b00;
+    background: linear-gradient(135deg, #ed8b00 0%, #ff9f1a 100%);
     color: white;
+    box-shadow: 0 8px 25px rgba(237, 139, 0, 0.3);
 }
 
 /* Icon styling */
@@ -249,37 +300,90 @@ h1::first-letter {
     font-size: 1.25rem;
 }
 
-/* Car placeholder */
+/* Information section */
 #car {
-    height: 200px;
-    background: linear-gradient(135deg, #2196f3, #21cbf3);
+    background: white;
     border-radius: 12px;
     margin-top: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 1.2rem;
+    padding: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e1e5e9;
+}
+
+.info-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.info-header h2 {
+    color: #2196f3;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.info-header p {
+    color: #666;
+    font-size: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.feature-card {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #2196f3;
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-2px);
+}
+
+.feature-card h3 {
+    color: #333;
+    font-size: 1.1rem;
     font-weight: 600;
-    position: relative;
-    overflow: hidden;
+    margin-bottom: 0.5rem;
 }
 
-#car::before {
-    content: 'Interactive Learning Experience';
-    position: absolute;
-    z-index: 1;
+.feature-card p {
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.5;
 }
 
-#car::after {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
-    animation: shine 3s infinite;
+.stats-section {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid #e1e5e9;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2196f3;
+    display: block;
+}
+
+.stat-label {
+    color: #666;
+    font-size: 0.9rem;
+    margin-top: 0.25rem;
 }
 
 @keyframes shine {
@@ -353,8 +457,25 @@ h1::first-letter {
     }
     
     #car {
-        height: 150px;
-        font-size: 1rem;
+        padding: 1.5rem;
+    }
+    
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .stats-section {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .stat-item {
+        margin-bottom: 1rem;
+    }
+    
+    .info-header h2 {
+        font-size: 1.5rem;
     }
 }
 
