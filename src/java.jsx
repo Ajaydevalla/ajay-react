@@ -1,4 +1,5 @@
 import React from 'react'
+import "./python.css"
 
 function Java(){
     return (

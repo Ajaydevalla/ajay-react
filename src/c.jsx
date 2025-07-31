@@ -1,5 +1,5 @@
 import React from 'react'
-import "./python"
+import "./python.css"
 function C() {
     return (
         <div className="python-container">
