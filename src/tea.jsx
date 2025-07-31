@@ -1,7 +1,7 @@
 import React from 'react'
 import "./python.css"
 
-function Java(){
+function Tea(){
     return (
         <div className="python-container">
             <h1>Java</h1>
@@ -32,4 +32,4 @@ function Java(){
         </div>
     );
 }
-export default Java
+export default Tea

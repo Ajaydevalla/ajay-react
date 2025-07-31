@@ -11,7 +11,8 @@ import Sql from './sql'
 
 import Signup from './signup'
 import Login from './login'
-import Java from './Java'
+import Tea from './tea'
+
 
 function App(){
     return(
@@ -25,10 +26,10 @@ function App(){
                 <Route path='/C++' element={<Cc/>}></Route>
                 <Route path='/html' element={<Html/>}></Route>
                 <Route path='/css' element={<Css/>}></Route>
-                <Route path='/java' element={<Java/>}></Route>
                 <Route path='/sql' element={<Sql/>}></Route>
                 <Route path='/signup' element={<Signup/>}></Route>
                 <Route path='/login' element={<Login/>}></Route>
+                <Route path='/tea' element={<Tea/>}></Route>
 
 
             </Routes>
