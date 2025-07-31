@@ -2,7 +2,7 @@ import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import "./home.css"
 import {SiPython,SiJavascript,SiC,SiHtml5,SiCplusplus} from "react-icons/si" // Added SiCplusplus
-import { FaJava, FaUser, FaHome, FaGraduationCap } from "react-icons/fa6"; // Added more icons
+import { FaJava, FaUser, FaHome, FaGraduationCap } from "react-icons/fa"; // Added more icons
 import { MdCss } from "react-icons/md";
 import { PiFileSql } from "react-icons/pi";
 
