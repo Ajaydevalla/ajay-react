@@ -22,11 +22,21 @@ function Home(){
                     <option value="">css</option>
                     <option value="">java</option>
                     <option value="">sql</option>
+                </select><select name="" id="">
+                    <option value="">Examples</option>
+                    <option value="">python</option>
+                    <option value="">javascript</option>
+                    <option value="">c</option>
+                    <option value="">c++</option>
+                    <option value="">html</option>
+                    <option value="">css</option>
+                    <option value="">java</option>
+                    <option value="">sql</option>
                 </select>
                 <input id='navinput' placeholder='Search programs & examples' type="text" />
                 <button>home</button>
-                <button onClick={()=>{nav("/signup")}}>signup</button>
-                <button onClick={()=>{nav("/login")}}>login</button>
+                <button>learn Courses</button>
+                <button>profile</button>
             </nav>
            <h1>learn programs for free</h1>
            <div id='div12'>
